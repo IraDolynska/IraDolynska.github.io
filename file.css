@@ -1,0 +1,278 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Verdana';
+    font-size: 15pt;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 15pt;
+    color: #e377b7;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+}
+
+h1 span {
+    border: 4px dashed #8a466c;
+    padding: 10px;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    background-image: url("img/fon1.png");
+    background-size: cover;
+}
+
+#header img {
+    display: block;
+    width: 598px;
+    height: 147px;
+    margin: auto;
+}
+
+.section {
+    font-size: 13pt;
+    background-color: #a416f91c;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+#time {
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+
+#about {
+    text-align: center;
+}
+
+#about img {
+    display: block;
+    width: 850px;
+    height: 373px;
+    margin: auto;
+}
+
+.quote {
+    font-size: 12pt;
+    text-align: right;
+    margin-top: 10px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #8a466c;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+}
+
+table,
+th,
+td {
+    border: 2px solid #8a466c;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.selected {
+    background-color: #e377b7;
+    font-weight: bold;
+    color: white;
+}
+
+form {
+    text-align: center;
+    margin-top: 0;
+}
+
+.submit {
+    background-color: #8a466c;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
+}
+
+.submit:hover {
+    background-color: #e377b7;
+}
+
+textarea {
+    height: 100px;
+}
+
+input,
+textarea {
+    margin-bottom: 10px;
+    font-size: 11pt;
+    padding: 15px 10px 10px;
+    border: 1px solid #cecece;
+    background-color: #efefef;
+    color: #787575;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+}
+
+#contacts img {
+    height: 50px;
+    width: 50px;
+    margin-top: 7px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+#contacts a {
+    text-decoration: none;
+}
+
+#contacts img:hover {
+    opacity: 0.5;
+}
+
+#contacts {
+    text-align: center;
+}
+
+/* Кнопка Вгору*/
+#myButton {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-image: url(img/backtotop.png);
+}
+
+/* Стилі для меню */
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    outline: none;
+    transition: .4s ease-in-out;
+}
+
+.topmenu {
+    backface-visibility: hidden;
+    text-align: center;
+    background: rgba(255, 255, 255, .8);
+}
+
+.topmenu > li {
+    display: inline-block;
+    position: relative;
+}
+
+.topmenu > li > a {
+    font-family: 'Exo 2', sans-serif;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 30px;
+    font-weight: bold;
+    color: #8a466c;
+    text-transform: uppercase;
+}
+
+
+.topmenu li a:hover {
+    color: #e377b7;
+}
+
+.submenu {
+    background: white;
+    border: 2px solid #8a466c;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    width: 100%;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: .6s ease-in-out;
+}
+
+.topmenu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+}
+
+.submenu li a {
+    color: #7f7f7f;
+    font-size: 13px;
+    line-height: 36px;
+    padding: 0 25px;
+    font-family: 'Kurale', serif;
+}
+
+/* Стилі до збільшення картинки */
+
+.image {
+    cursor: pointer;
+}
+
+.popup {
+
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+
+}
+
+.popup_bg {
+
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+
+}
+
+.popup_img {
+
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+    max-height: 94%;
+    max-width: 94%;
+    margin: 1% 0 0 0;
+}

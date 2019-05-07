@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FOREVER - fitness</title>
+    <meta charset="UTF-8">
+    <link href="file.css" rel="stylesheet" type="text/css">
+    <script src="clock.js"></script>
+    <script src="my.js"></script>
+    <SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
+    <SCRIPT type="text/javascript" src="popup_img.js"></SCRIPT>
+</head>
+
+<body>
+    <!-- header start -->
+    <div id="header" class="section">
+        <img alt="" src="img/Forever.png">
+        <span id="time">00:00:00</span>
+    </div>
+    <div class="section">
+    <nav>
+        <ul class="topmenu">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#rozklad">Розклад занять</a>
+                <ul class="submenu">
+                    <li><a href="">Календар</a></li>
+                    <li><a href="">Години прийому</a></li>
+                    <li><a href="">Наші тренери</a></li>	
+                </ul>
+            </li>
+            <li><a href="#contacts">Follow us</a>
+                <ul class="submenu">
+                    <li><a href="">YouTube</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                </ul>
+            </li>
+            <li><a href="#forma">Зв'яжіться з нами</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <!-- About Us section start -->
+    <div class="section" id="about">
+        <h1><span>About Us</span></h1>
+        
+        <iframe height="245" width="430" src="img/sattva28_preview.webm" frameborder="0"></iframe>
+        <p>
+            Привіт! Ми відрізняємось від інших тим, що маємо ціль: <strong>ми гартуємо здорову Націю!</strong>.
+        </p>
+        <br>
+        <p>
+            Команда фітнес-мережі <strong><i>ФОРЕВЕР</i></strong>, її тренерський склад, це висококваліфіковані спеціалісти, професіонали своєї справи. Ми постійно і невпинно вдосконалюємо свої знання та навички,беручи участь у міжнародних фітнес-конвенціях, обмінюючись власним досвідом, навчаючись у найкращих.
+        </p>
+        <br>
+        <p>
+            Отже, ми раді , що нашому колективу вдається створювати для людей середовище, в якому можна корисно,емоційно і комфортно провести час, який ви знайшли для себе. Кожен відвідувач клубу <strong><i>ФОРЕВЕР</i></strong> зможе обрати тренувальні програми, за допомогою яких саме він досягне найкращого результату.
+        </p>
+        <br>
+        <img alt="" src="img/fon.png" class="image">
+        <br>
+        <img alt="" src="img/fon2.png" class="image">
+        <p class="quote"><i>"Зроби сьогодні скільки зможеш - завтра зможеш ще більше."</i></p>
+    </div>
+    <!-- About Us section end -->
+
+    <!-- Schedule section start -->
+
+    <div class="section" id="rozklad">
+        <h1><span>Розклад занять</span></h1>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+            <tr>
+                <td>13:00-14:00</td>
+                <td class="selected" style='background-color: #e377b7'>СТЕП-АЕРОБІКА</td>
+                <td></td>
+                <td class="selected" style='background-color: #cc1875'>ПІЛАТЕС</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>15:00-16:00</td>
+                <td></td>
+                <td class="selected" style='background-color: #895c95'>ЙОГА</td>
+                <td></td>
+                <td></td>
+                <td class="selected" style='background-color: #e377b7'>СТЕП-АЕРОБІКА</td>
+            </tr>
+            <tr>
+                <td>17:00-18:00</td>
+                <td></td>
+                <td></td>
+                <td class="selected" style='background-color: #e377b7'>СТЕП-АЕРОБІКА</td>
+                <td class="selected" style='background-color: #ab229c'> ДЖАМПІНГ</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>18:00-19:00</td>
+                <td class="selected" style='background-color: #ab229c'> ДЖАМПІНГ</td>
+                <td></td>
+                <td></td>
+                <td class="selected" style='background-color: #895c95'>ЙОГА</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>19:00-20:00</td>
+                <td></td>
+                <td class="selected" style='background-color: #8a466c'>Спінбайк-фіт</td>
+                <td class="selected" style='background-color: #cc1875'>ПІЛАТЕС</td>
+                <td></td>
+                <td class="selected" style='background-color: #8a466c'>Спінбайк-фіт</td>
+            </tr>
+        </table>
+    </div>
+    <!-- Schedule section end -->
+
+    <!-- Form section start -->
+    <div class="section" id="forma">
+        <h1><span>Зв'яжіться з нами</span></h1>
+        <form>
+            <input name="name" placeholder="Name" type="text" required /><br />
+            <input name="email" placeholder="Email" type="email" required /><br />
+            <textarea name="message" placeholder="Message" required></textarea>
+            <input type="submit" value="SEND" class="submit" />
+        </form>
+    </div>
+    <!-- Form section end -->
+
+    <!-- Contacts section start -->
+    <div class="section" id="contacts">
+        <h1><span>Follow Us</span></h1>
+        <p>Слідкуйте за нами у соцмережах!</p>
+        <div>
+            <a href="https://www.youtube.com/channel/UCEOP5c1GV1h3dxHyawRD6ig" target="_blank" title="Youtube">
+                <img alt="Youtube" src="img/Youtube_logo.svg.png" />
+            </a>
+            <a href="https://www.facebook.com/groups/fitnesslviv/" target="_blank" title="Facebook">
+                <img alt="Facebook" src="img/Facebook.png" />
+            </a>
+            <a href="https://www.instagram.com/fitness_club_forever/" target="_blank" title="Instagram">
+                <img alt="Instagram" src="img/Instagram_icon.png" />
+            </a>
+        </div>
+    </div>
+    <!-- Contacts section end -->
+<button onclick="topFunction()" id="myButton" title="GoToTop">
+</button>
+
+</body>
+
+</html>
